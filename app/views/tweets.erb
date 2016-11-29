@@ -1,0 +1,133 @@
+<body>
+    <div class="container2">
+        <header>
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+            <!-- <div id="logo"><img class="icontwitter" src="https://mysuagm.suagm.edu/image/image_gallery?uuid=6460f333-7aed-4161-b986-49d631a55a0d&groupId=138115&t=1428705369114"/></div> -->
+            <div id="exit">
+                <form action="/exit" method="post">
+                    <input class="iconoexit" type=image src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/512/close_red.png">
+                </form>
+            </div>
+            <img class="profile" src="<%= @url %>" alt="avatar" width="200" height="200">
+            <div id="logo">
+                <form action="/sign_in" method="get">
+                    <input class="icontwitter" type=image src="https://mysuagm.suagm.edu/image/image_gallery?uuid=6460f333-7aed-4161-b986-49d631a55a0d&groupId=138115&t=1428705369114">
+
+                </form>
+            </div>
+            <div class="menu_bar">
+                <a href="#" class="bt-menu">
+                    <span class="icono-list"></span>
+                </a>
+            </div>
+
+        </header>
+        <div id="carga"><img class="carga" src="/carga.gif"/></div>
+        <nav id="buscame">
+            <ul id="yo">
+                <a href="#" class="bt-menucross">
+                    <span class="icono-crossCircle"></span>
+                </a>
+
+                <li>
+                    <a id="myBtn" href="#">Usuario</a>
+                </li>
+                <li>
+                    <a id="myBtn2" href="#">Agregar Tweet</a>
+                </li>
+                <li>
+                  <a id="myBtn3"   href="#">Programa un Tweet</a>
+                </li>
+            </ul>
+            <br clear="all">
+        </nav>
+
+        <div class="User_oauth">
+            <% if session[:username] %>
+            <h2>Tu session esta activa :
+                <%= session[:username] %></h2>
+            <h2><%=@user%></h2>
+            <% end %>
+
+        </div>
+
+        <div class="content2">
+            <div class="twitter_user">
+
+                <div class="contenidotweet">
+                    <%if @tweets%>
+                    <% @tweets.reverse_each do  |t| %>
+                    <li>
+                        <label><%= t.tweet %></label><br>
+                    </li>
+                    <% end %>
+                    <%end%>
+                </div>
+            </div>
+
+            <div class="estatus_d_tarea" id="estatus">
+              <h1>TEXTO</h1>
+            </div>
+
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>ESCRIBE EL USUARIO</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="new_comment">
+                            <textarea id='twitter_handle' name="twitter_handle" placeholder='Usuario' name='cmt' value=''></textarea>
+                            <input class="enviar_al_form_usuario" type="submit" value="Enviar" name='submit_cmt'></input>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Twitter API</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myModal2" class="modal2">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close2">×</span>
+                        <h2>Escribe un Tweet</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="new_comment">
+                            <textarea id="enviar_tweet" name="tweet" placeholder='Escribe un Tweet' name='cmt' value=''></textarea>
+                            <input class="enviar" type="submit" value="Enviar" name='submit_cmt'></input>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>:3</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="myModal3" class="modal3">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close3">×</span>
+                        <h2>Escribe un Tweet al Futuro</h2>
+                    </div>
+                    <div class="modal-body">
+
+                        <form class="new_comment" id="latertweet">
+                            <textarea id="futuro" name="laterTweet" placeholder='Escribe un Tweet' name='cmt' value=''></textarea>
+                            <input type='text' id="tiempo" name="tiempo_futuro" placeholder='Indica el tiempo' value=''></input>
+                            <input class="enviar_futuro" type="submit" value="Enviar" name='submit_cmt'></input>
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Api Twitter</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>

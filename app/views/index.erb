@@ -1,0 +1,56 @@
+<body>
+    <div class="container2">
+        <header>
+            <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+            <div id="logocodea"><img class="iconcodea" src="http://www.codealab.mx/assets/codeacamp_logo3-d00e28326ca4ba35c48d58af090ee7df.png"/></div>
+            <!-- <div id="logo"><img class="icontwitter" src="https://mysuagm.suagm.edu/image/image_gallery?uuid=6460f333-7aed-4161-b986-49d631a55a0d&groupId=138115&t=1428705369114"/></div> -->
+            <div id="exit">
+                <form action="/exit" method="post">
+                    <input class="iconoexit" type=image src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/512/close_red.png">
+                </form>
+            </div>
+
+            <div id="logo">
+                <form action="/sign_in" method="get">
+                    <input class="icontwitter" type=image src="https://mysuagm.suagm.edu/image/image_gallery?uuid=6460f333-7aed-4161-b986-49d631a55a0d&groupId=138115&t=1428705369114">
+                    <br><br><label style="color:white;top:23%;font-weight: bold;right: 4%;"class="icontwitter">Iniciar Session</label>
+                </form>
+            </div>
+          
+
+        </header>
+
+<img class="icon_decoration" src="http://www.wallpapersingapore.com/images/gif/twitter.gif"/>
+
+
+
+        <div id="carga"><img class="carga" src="/carga.gif"/></div>
+
+
+        <div class="content2">
+            <div class="contenidotweet">
+                <%if @tweets%>
+
+                <%end%>
+            </div>
+
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">×</span>
+                        <h2>ESCRIBE EL USUARIO</h2>
+                    </div>
+                    <div class="modal-body">
+                        <form class="new_comment">
+                            <textarea id='twitter_handle' name="twitter_handle" placeholder='Usuario' name='cmt' value=''></textarea>
+                            <input class="enviar_al_form_usuario" type="submit" value="Enviar" name='submit_cmt'></input>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Twitter API</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>

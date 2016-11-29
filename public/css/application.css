@@ -1,0 +1,276 @@
+.container2 {
+    margin: 20px auto;
+    width: 400px;
+    padding: 20px 20px 20px 30px;
+    /*background-color: rgb(38, 174, 204);*/
+    z-index: -100;
+    /*#5f6061*/
+}
+h1{
+  padding-top: 0;
+  color:white;
+  font-size: 40px;
+  font-family: cursive;
+  font-weight: bold;
+}
+.iconcodea {
+    color: white;
+    font-family: cursive;
+    padding-left: 4%;
+    padding-top: 0%;
+    padding-bottom: 10%;
+    font-size: 4em;
+    font-style: oblique;
+    width: 100%;
+}
+
+.iconoexit{
+  position: fixed;
+  top: 2%;
+  right: 1%;
+  width: 50px;
+}
+
+.icontwitter {
+    position: fixed;
+    top: 7%;
+    right: 5%;
+    width: 150px;
+}
+.icon_decoration{
+  top:30%;
+  left: 30%;
+    position: fixed;
+
+}
+
+.profile{
+left: 20%;
+position: fixed;
+border-radius: 5px;
+border-color: white;
+margin: auto;
+}
+
+header-h1 {
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #021725;
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: #0a6dad;
+    margin: 0;
+    height: 100%;
+    left: -20%;
+    box-shadow: 0 0 0 5px white inset;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    z-index: 10;
+    display: block;
+    color: white;
+    padding: 15px 50px 15px 0;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    background: white;
+    color: black;
+}
+
+.menu_bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    border-right: 2px;
+    background-color: #0a6dad;
+    margin: 0;
+    height: 100%;
+    box-shadow: 0 0 0 1px white inset;
+}
+
+a .icono-list {
+    color: #FFF;
+    left: 0;
+    height: 10px;
+    width: 5px;
+}
+
+a .icono-crossCircle {
+    color: #FFF;
+    left: 115px;
+    /*z-index: 2;*/
+    font-weight: bold;
+}
+
+h2{
+  color: white;
+}
+/*.twitter_user{
+  padding-left: 350px;
+  padding-right: 400px;
+}*/
+.contenidotweet {
+    /*padding: 10px 30px 0px 0px;*/
+    padding: 0px 0px 0px 0px;
+}
+
+.contenidotweet li {
+    /*
+
+    background-color: rgb(96, 212, 208);*/
+    background-color: #379ed1;
+    color: white;
+    text-align: center;
+    /*box-shadow: 0 0 0 2px white inset;*/
+    border-bottom: 1px solid white;
+    display: block;
+    padding: 10px 0px 10px 10px;
+}
+
+
+#carga {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 35%;
+}
+
+.carga {
+    width: 150%;
+}
+
+.new_comment, h2, h3 {
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+.new_comment textarea{
+    border: 2px solid #765942;
+    border-radius: 10px;
+    height: 200px;
+    width: 430px;
+}
+
+#tiempo {
+  border: 2px solid #765942;
+  border-radius: 10px;
+  height: 50px;
+  width: 130px;
+}
+
+.estatus_d_tarea{
+  position: fixed;
+  top: 40%;
+  right: 5%;
+  width: 150px;
+}
+.container {
+    border-radius: 5px;
+}
+
+.modal, .modal2 , .modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 15%;
+    border: 1px solid #888;
+    width: 20%;
+}
+
+.close, .close2 , .close3{
+    color: white;
+    float: right;
+    font-size: 58px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus, .close2:hover, .close2:focus ,.close3:focus ,.close3:hover{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    background-color: #00ccf9;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 7px;
+}
+
+.modal-footer {
+    padding: 2px 9px;
+    background-color: #00b4d9;
+    color: white;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
